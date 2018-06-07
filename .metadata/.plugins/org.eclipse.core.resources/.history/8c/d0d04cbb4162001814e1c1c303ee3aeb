@@ -1,0 +1,19 @@
+package swing;
+
+import javax.swing.*;
+
+class MyjDialog extends JDialog{
+	public MyjDialog (MyFrame frame)
+	{
+		super(frame,"第一个窗体",true);
+	}
+}
+
+public class MyFrame {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,16 @@
+package swing;
+
+import javax.swing.*;
+
+public class JCheckBoxTest extends JFrame {
+
+	public JCheckBoxTest() {
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new JCheckBoxTest();
+	}
+
+}

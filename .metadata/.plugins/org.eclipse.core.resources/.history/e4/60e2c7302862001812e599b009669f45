@@ -1,0 +1,21 @@
+package swing;
+
+import java.awt.Container;
+
+import javax.swing.*;
+
+public class Example1 extends JFrame {
+
+	public void  CreateJFrame(String title)
+	{
+		JFrame jf=new JFrame(title);
+		Container container=jf.getContentPane(); //获取一个容器
+		JLabel jl=new JLabel("这是一个JFrame窗体");
+		jl.setHorizontalAlignment(SwingConstants.CENTER);//标签文章居中
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

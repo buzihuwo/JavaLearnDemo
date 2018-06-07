@@ -1,0 +1,49 @@
+package swing;
+
+import java.awt.*;
+
+import javax.swing.*;
+
+public class JComboBoxTest extends JFrame {
+
+	public JComboBoxTest() {
+		Container c = getContentPane();
+		
+		setTitle("下拉框");
+//		JComboBox<String> jc = new JComboBox<>(new MyComboBox());
+//		JLabel jl=new JLabel("请选择证件");
+//		setLayout(new FlowLayout());
+//		c.add(jl);
+//		c.add(jc);
+		c.setSize(250, 250);
+		setVisible(true);
+		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new JComboBoxTest();
+	}
+
+}
+
+class MyComboBox extends AbstractListModel<String> implements ComboBoxModel<String> {
+	String selectedItem = null;
+	String[] test = { "身份正", "军人证", "学生证", "工作证" };
+
+	public String getElementAt(int index) {
+		return test[index];
+	}
+
+	public int getSize() {
+		return test.length;
+	}
+
+	public void setSelectedItem(Object item) {
+		selectedItem = (String) item;
+	}
+
+	public Object getSelectedItem() {
+		return selectedItem;
+	}
+}

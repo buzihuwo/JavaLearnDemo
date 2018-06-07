@@ -1,0 +1,48 @@
+package swing;
+
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.*;
+
+import javax.swing.*;
+
+public class JTextFleldTest extends JFrame {
+
+	public JTextFleldTest() {
+		setTitle("文本框");
+		setSize(250, 300);
+		setLayout(new FlowLayout());
+		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+		Container c=getContentPane();
+		JLabel jl1=new JLabel("账号：");
+		JLabel jl2=new JLabel("密码：");
+		
+		JPasswordField jp=new JPasswordField(15);
+		jp.setEchoChar('*');
+		JTextField jt=new JTextField(15);//
+		JButton jb=new JButton("提交");
+		c.add(jl1);
+		c.add(jt);
+		c.add(jl2);
+		c.add(jp);
+		c.add(jb);
+		jb.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				//jt.setText("");
+				jt.requestFocus();//焦点回到文本框
+				JOptionPane.showMessageDialog(null,String.format("账号：%s，密码：%s",jt.getText(),jp.getText()) );
+				
+			}
+		});
+		
+		setVisible(true);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new JTextFleldTest();
+	}
+
+}

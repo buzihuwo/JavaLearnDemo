@@ -1,0 +1,16 @@
+package swing;
+
+import javax.swing.JFrame;
+
+public class Example1 extends JFrame {
+
+	public void  CreateJFrame(String title)
+	{
+		JFrame jf=new JFrame(title);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,34 @@
+package swing;
+
+import java.awt.*;
+
+import javax.swing.*;
+
+public class JPaneTest extends JFrame {
+
+	public JPaneTest() {
+		Container c=getContentPane();
+		c.setLayout(new GridLayout(2, 1, 10, 10));//设置布局
+		JPanel p1=new JPanel(new GridLayout(1,3,10,10));//初始化一个1行3列面板布局
+		JPanel p2=new JPanel(new GridLayout(1,2,10,10));//初始化一个1行2列面板布局
+		JPanel p3=new JPanel(new GridLayout(1,2,10,10));//初始化一个1行2列面板布局
+		JPanel p4=new JPanel(new GridLayout(2,1,10,10));//初始化一个2行1列面板布局
+		for (int i = 0; i < 3; i++) {
+			p1.add(new JButton("第一个JPanel"+i));
+		}
+		
+		c.add(p1);
+		c.add(p2);
+		c.add(p3);
+		c.add(p4);
+		setSize(600, 100);
+		setVisible(true);
+		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new JPaneTest();
+	}
+
+}

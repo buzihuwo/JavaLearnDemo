@@ -1,0 +1,33 @@
+package swing;
+
+import java.awt.*;
+
+import javax.swing.*;
+
+public class BorderLayoutPosition extends JFrame {
+
+	public BorderLayoutPosition() {
+		String[] border = { BorderLayout.CENTER, // 中
+				BorderLayout.NORTH, // 上 北
+				BorderLayout.SOUTH, // 下 南
+				BorderLayout.WEST, // 左 西
+				BorderLayout.EAST// 右 东
+		};
+		String[] buttonName = { "center button", "north button", "south button", "west button", "east button" };
+		setTitle("这个窗体使用了边界布局管理器");
+		Container c = getContentPane();
+		setLayout(new BorderLayout());
+		for (int i = 0; i < border.length; i++) {
+			c.add(border[i], new JButton(buttonName[i]));
+		}
+		setSize(350, 200);
+		setVisible(true);
+		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new BorderLayoutPosition();
+	}
+
+}

@@ -1,0 +1,38 @@
+package swing;
+
+import java.awt.*;
+
+import javax.swing.*;
+
+public class JCheckBoxTest extends JFrame {
+
+	public JCheckBoxTest() {
+		Container c=getContentPane();
+		setTitle("多选框");
+		setSize(250,250);
+		//setLocationRelativeTo(null);
+		c.setLayout(new BorderLayout());
+		setVisible(true);
+		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+		JPanel panel=new JPanel();
+		
+		JCheckBox checkBox01 = new JCheckBox("菠萝");
+        JCheckBox checkBox02 = new JCheckBox("香蕉");
+        JCheckBox checkBox03 = new JCheckBox("雪梨");
+        JCheckBox checkBox04 = new JCheckBox("荔枝");
+        panel.add(checkBox01);
+        panel.add(checkBox02);
+        panel.add(checkBox03);
+        panel.add(checkBox04);
+        
+        c.add(panel, BorderLayout.SOUTH);
+        
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new JCheckBoxTest();
+	}
+
+}
