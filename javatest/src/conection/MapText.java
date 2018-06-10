@@ -11,7 +11,7 @@ public class MapText {
 	public static void main(String[] args) {
 		Map<String, String> map = new HashMap<String, String>();
 		Emp emp = new Emp("351", "张三");
-		Emp emp2 = new Emp("512", "李四");
+		Emp emp2 = new Emp("512", "李四"); 
 		Emp emp3 = new Emp("853", "王一");
 		Emp emp4 = new Emp("125", "赵六");
 		Emp emp5 = new Emp("341", "黄七");
