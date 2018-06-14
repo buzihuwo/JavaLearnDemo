@@ -30,7 +30,7 @@ public class Ftest extends JFrame {
 			openButton = new JButton("写入文件");
 			openButton.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
-					File file = new File("word1.txt");
+					File file = new File("word.txt");
 					try {
 						FileWriter out = new FileWriter(file);
 						String s = jTextArea.getText();
@@ -53,10 +53,11 @@ public class Ftest extends JFrame {
 			closeButton = new JButton("读取文件");
 			closeButton.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
-					File file = new File("word1.txt");
+					File file = new File("word.txt");
 					try {
 						FileReader in = new FileReader(file);
-						char c[] = new char[1024];
+						int length= (int) file.length();
+						char c[] = new char[length];
 						int len = in.read(c);
 						jTextArea.setText(new String(c, 0, len));
 						in.close();

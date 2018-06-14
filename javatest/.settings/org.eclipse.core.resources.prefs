@@ -1,8 +1,10 @@
 eclipse.preferences.version=1
 encoding//src/collection/Gather.java=UTF-8
 encoding//src/collection/Muster.java=UTF-8
+encoding//src/file/Example.java=UTF-8
 encoding//src/file/FileTest.java=UTF-8
 encoding//src/file/Ftest.java=UTF-8
+encoding//src/file/Student.java=UTF-8
 encoding//src/javatest/DecimalFormatSimpleDemo.java=UTF-8
 encoding//src/javatest/DirList.java=UTF-8
 encoding//src/javatest/DuoTaiTest.java=UTF-8
@@ -34,3 +36,5 @@ encoding//src/swing/JRadioButtonTest.java=UTF-8
 encoding//src/swing/JTextFleldTest.java=UTF-8
 encoding//src/swing/MyFrame.java=UTF-8
 encoding//src/swing/jScrollPaneTest.java=UTF-8
+encoding//src/zip/Decompressing.java=UTF-8
+encoding//src/zip/MyZip.java=UTF-8
