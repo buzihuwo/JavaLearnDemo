@@ -1,4 +1,7 @@
 eclipse.preferences.version=1
+encoding//src/annotation/Constructor_Annotation.java=UTF-8
+encoding//src/annotation/Record.java=UTF-8
+encoding//src/annotation/RecordReflex.java=UTF-8
 encoding//src/collection/Gather.java=UTF-8
 encoding//src/collection/Muster.java=UTF-8
 encoding//src/file/Example.java=UTF-8
