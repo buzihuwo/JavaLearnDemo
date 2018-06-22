@@ -1,4 +1,4 @@
-package Multithreading;
+ package Multithreading;
 ///用Thread创建线程
 public class ThreadTest extends Thread {
 	private int count = 10;

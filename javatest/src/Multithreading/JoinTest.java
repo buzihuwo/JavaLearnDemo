@@ -11,7 +11,7 @@ public class JoinTest extends JFrame {
 	private Thread threadB;
 	final JProgressBar jProgressBar = new JProgressBar();// 定义进度条组件
 	final JProgressBar jProgressBar2 = new JProgressBar();
-	int count = 0;
+	//int count = 0;
 
 	public JoinTest() {
 		super();

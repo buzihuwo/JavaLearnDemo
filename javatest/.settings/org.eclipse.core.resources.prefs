@@ -1,7 +1,10 @@
 eclipse.preferences.version=1
+encoding//src/Multithreading/InterruptedSwing.java=UTF-8
 encoding//src/Multithreading/JoinTest.java=UTF-8
+encoding//src/Multithreading/PriorityTest.java=UTF-8
 encoding//src/Multithreading/SleepMethodTest.java=UTF-8
 encoding//src/Multithreading/SwingAndThread.java=UTF-8
+encoding//src/Multithreading/ThreadSafeTest.java=UTF-8
 encoding//src/Multithreading/ThreadTest.java=UTF-8
 encoding//src/annotation/Constructor_Annotation.java=UTF-8
 encoding//src/annotation/Record.java=UTF-8
