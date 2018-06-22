@@ -3,7 +3,12 @@
 /zip/
 /reflex/
 /annotation/
+<<<<<<< HEAD
+/javatest/
+/swing/
+=======
 /myEnum/
 /genericity/
 /Multithreading/
 /2.png
+>>>>>>> ed98d09918bfa979716013b894b438f0753b3f0d
